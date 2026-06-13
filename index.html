@@ -122,6 +122,17 @@
       <div class="form-group"><label>Kategori *</label><select id="f-kategori"><option value="">Pilih kategori</option><option>Furnitur</option><option>Elektronik</option><option>Pakaian</option><option>Buku</option><option>Peralatan Dapur</option><option>Mainan Anak</option><option>Lainnya</option></select></div>
       <div class="form-group"><label>Kondisi Barang *</label><select id="f-kondisi"><option value="">Pilih kondisi</option><option>Baru</option><option>Sangat Baik</option><option>Baik</option><option>Cukup</option><option>Perlu Perbaikan</option></select></div>
       <div class="form-group"><label>Deskripsi</label><textarea id="f-desc" placeholder="Ceritakan detail barang: ukuran, warna, alasan dijual/dibagikan…"></textarea></div>
+      
+      <!-- PENAMBAHAN FIELD NOMOR WHATSAPP -->
+      <div class="form-group">
+        <label>Nomor WhatsApp * <span style="font-weight:400;color:var(--muted)">(untuk chat pembeli)</span></label>
+        <div style="display:flex;gap:8px;align-items:center">
+          <span style="padding:11px 12px;background:var(--bg);border:1px solid var(--border);border-radius:var(--radius-sm);font-size:14px;color:var(--muted);white-space:nowrap">+62</span>
+          <input type="tel" id="f-wa" placeholder="81234567890" style="flex:1"/>
+        </div>
+        <div style="font-size:11px;color:var(--muted);margin-top:5px">Contoh: 81234567890 (tanpa 0 di depan, tanpa +62)</div>
+      </div>
+
       <div class="form-group">
         <label>Status Barang *</label>
         <div class="status-options">
@@ -136,7 +147,6 @@
       <div class="form-group"><label>Kabupaten / Kota *</label><select id="f-kabupaten" onchange="updateKecamatan()" disabled><option value="">— Pilih provinsi dulu —</option></select></div>
       <div class="form-group"><label>Kecamatan *</label><select id="f-kecamatan" onchange="enableDesaInput()" disabled><option value="">— Pilih kabupaten dulu —</option></select></div>
       
-      <!-- INPUT DESA DIUBAH MENJADI TEXT -->
       <div class="form-group"><label>Desa / Kelurahan *</label><input type="text" id="f-desa" placeholder="Masukkan nama Desa/Kelurahan" disabled/></div>
       <div class="form-group"><label>Dusun</label><input type="text" id="f-dusun" placeholder="Opsional"/></div>
       <div class="form-group"><label>RT / RW</label><input type="text" id="f-rtrw" placeholder="Contoh: 003/005"/></div>
